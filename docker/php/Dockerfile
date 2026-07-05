@@ -19,7 +19,15 @@ RUN docker-php-ext-install \
 
 COPY --from=composer:latest /usr/bin/composer  /usr/bin/composer
 
+ARG UID=1000
+ARG GID=1000
+
+RUN groupadd -g ${GID} stuxnet \
+&& useradd -u ${UID} -g stuxnet -m stuxnet
+
 WORKDIR /var/www
+
+USER stuxnet
 
 
 

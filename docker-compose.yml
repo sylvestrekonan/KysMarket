@@ -23,10 +23,11 @@ services:
     build:
       context: .
       dockerfile: docker/php/Dockerfile
-    
+      args:
+        UID: ${UID}
+        GID: ${GID}
     container_name: kysMarket_app
     working_dir: /var/www
-
     volumes:
       - ./backend:/var/www
     depends_on:
@@ -38,6 +39,9 @@ services:
     build:
       context: .
       dockerfile: docker/node/Dockerfile
+      args:
+        UID: ${UID}
+        GID: ${GID}
     container_name:  kysMarket_node
     working_dir: /workspace
 
