@@ -125,7 +125,7 @@ Après une modification du .env :
 
 Les endpoints de l'API seront progressivement documentés et testables avec :
 
-- **Postman:** [text](https://documenter.getpostman.com/view/54015401/2sBYAvvqVc)
+- **Postman:** [View API Documentation](https://documenter.getpostman.com/view/54015401/2sBYAvvqVc)
 
 
 
