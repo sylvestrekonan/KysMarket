@@ -70,8 +70,9 @@ Il n'est pas nécessaire d'installer PHP, MySQL ou Node.js directement sur la ma
 
 1. **Cloner le dépôt:**
 
-    git clone git@github.com:sylvestrekonan/KysMarket.git
-    cd KysMarket
+    **git clone git@github.com:sylvestrekonan/KysMarket.git**
+    
+    **cd KysMarket**
 
 2. **Construire et démarrer les conteneurs**
     
